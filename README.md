@@ -2,6 +2,8 @@
 
 Create custom file extensions in Sinatra and other Tilt compatible frameworks that transform HTML via the [HTML Pipeline](https://github.com/jch/html-pipeline).
 
+[![Build Status](https://travis-ci.org/bradgessler/tilt-html-pipeline.svg)](https://travis-ci.org/bradgessler/tilt-html-pipeline)
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -24,8 +26,8 @@ Say you're building an API documentation [site in Sinatra](https://github.com/br
 
 ```ruby
 require 'sinatra'
-require 'tilt/html/pipeline'
 require 'html/pipeline'
+require 'tilt/html/pipeline'
 
 Tilt.register_html_pipeline :apidoc, [
   HTML::Pipeline::MarkdownFilter,
